@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/setupScanParentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/zxing_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_scanner_layout="@layout/custom_data_matrix_scanner" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/sensorCodeBrackets" android:background="@color/dex_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/sensor_code_scan_overlay" android:contentDescription="@string/barcode_scan_overlay_content_description" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+        <ImageView android:gravity="start|center" android:id="@id/id_sensor_code_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/scan_2d_barcode" android:contentDescription="@string/scan_sensor_code_title" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body" style="@style/H3" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_1a" android:layout_marginEnd="4.0dip" style="@style/H3" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_1b" style="@style/H3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_2a" android:layout_marginEnd="4.0dip" style="@style/H3" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_2b" style="@style/H3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_3a" android:layout_marginEnd="4.0dip" style="@style/H3" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sensor_code_take_photo_body_3b" style="@style/H3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/spinner_color" android:gravity="center_horizontal" android:id="@id/id_no_code_button" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/no_sensor_code_button_text" android:textAllCaps="true" style="?dexH1" />
+</LinearLayout>

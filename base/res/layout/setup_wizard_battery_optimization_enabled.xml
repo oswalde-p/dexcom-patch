@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="34.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/battery_optimization_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_battery_optimization" android:contentDescription="@string/setup_wizard_battery_optimization_enabled_title" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="32.0dip" style="?dexH2" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_battery_optimization_text_1" style="?dexH2" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_battery_optimization_text_2" style="?dexH2" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_battery_optimization_text_3" style="?dexH2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_battery_optimization_text_4" style="?dexH2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_battery_optimization_text_5" style="?dexH2" />
+    </LinearLayout>
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" app:negativeAppiumID="id_battery_optimization_dont_allow" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_battery_optimization_allow" app:textNegative="@string/setup_wizard_battery_optimization_dont_allow" app:textPositive="@string/setup_wizard_battery_optimization_allow" />
+</LinearLayout>

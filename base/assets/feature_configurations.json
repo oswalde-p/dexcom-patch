@@ -1,0 +1,73 @@
+[
+    {
+        "name": "armwear",
+        "description": "UI feature portraying and indicating the sensor can be worn on the back of the arm",
+        "scope": "EnabledRegional",
+        "featureEnableMap": [
+            "base",
+            "region1",
+            "region2",
+            "region3",
+            "region6",
+            "region7",
+            "region11"
+        ]
+    },
+    {
+        "name": "armwear18",
+        "description": "Regions in this feature must be also in feature armwear. For armwear exclusive for 18 years and older",
+        "scope": "EnabledRegional",
+        "featureEnableMap": [
+            "region7"
+        ]
+    },
+    {
+        "name": "whatsNewHomeScreen",
+        "description": "Enable the What's new screen",
+        "scope": "EnabledRegional",
+        "featureEnableMap": [
+            "base",
+            "region1",
+            "region2",
+            "region3",
+            "region6",
+            "region7",
+            "region8",
+            "region9",
+            "region10"
+        ]
+    },
+    {
+        "name": "treatmentDecisions",
+        "description": "Enable the Treatment Decisions Options",
+        "scope": "EnabledRegional",
+        "featureEnableMap": [
+            "base",
+            "region1",
+            "region2",
+            "region3",
+            "region6",
+            "region7",
+            "region8",
+            "region9",
+            "region10",
+            "region11"
+        ]
+    },
+    {
+        "name": "splashScreenIcons",
+        "description": "Enable the OUS marks in the Splash Screen, CE and Blueman",
+        "scope": "EnabledRegional",
+        "featureEnableMap": [
+            "base",
+            "region1",
+            "region2",
+            "region3",
+            "region6",
+            "region7",
+            "region8",
+            "region9",
+            "region11"
+        ]
+    }
+]

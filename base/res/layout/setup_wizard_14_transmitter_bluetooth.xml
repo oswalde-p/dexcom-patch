@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" android:layout_below="@id/toolbar">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_above="@id/dualButtonLayout" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/bluetooth_image" android:layout_width="fill_parent" android:layout_height="180.0dip" android:src="@drawable/bluetooth_pairing" android:contentDescription="@string/setup_wizard_bluetooth" />
+                <TextView android:id="@id/id_bluetooth_transmitter_your_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_tx_android_connect_bt" style="?dexH2" />
+                <TextView android:id="@id/id_bluetooth_transmitter_bluetooth_text" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_bt_android_needs_on" style="?dexH2" />
+                <TextView android:id="@id/location_on" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_bt_android_needs_on_M" style="?dexH2" />
+            </LinearLayout>
+        </ScrollView>
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:negativeAppiumID="id_bluetooth_transmitter_learn_more" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_bluetooth_transmitter_i_understand" app:textNegative="@string/setup_wizard_learn_more" app:textPositive="@string/setup_wizard_i_understand" />
+    </RelativeLayout>
+</RelativeLayout>

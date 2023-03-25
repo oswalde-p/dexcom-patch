@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/nextButtonLayoutGray" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:onClickNegative="" app:onClickPositive="onClickCompleteSetup" app:positiveAppiumID="id_sensor_transmitter_skip_video_gray" app:textPositive="@string/setup_wizard_next" />
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/nextButtonLayoutBlue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:onClickNegative="" app:onClickPositive="onClickNegative" app:positiveAppiumID="id_sensor_transmitter_skip_video_blue" app:textPositive="@string/setup_wizard_next" />
+</androidx.constraintlayout.widget.ConstraintLayout>

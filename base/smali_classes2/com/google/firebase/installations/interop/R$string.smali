@@ -1,0 +1,18 @@
+.class public final Lcom/google/firebase/installations/interop/R$string;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final common_google_play_services_unknown_issue:I = 0x7f11008f
+
+.field public static final status_bar_notification_info_overflow:I = 0x7f110412
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

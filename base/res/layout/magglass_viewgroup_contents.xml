@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/magGlassView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dexcom.cgm.activities.MagGlassCompass android:id="@id/magGlassCompassView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:foregroundGravity="center_vertical" />
+    <com.dexcom.cgm.activities.controls.AutoFitTextView android:textStyle="bold" android:textColor="@color/dex_black" android:gravity="center" android:layout_gravity="center" android:id="@id/textViewEGV" android:layout_width="@dimen/magglass_egv_text_width_size" android:layout_height="@dimen/magglass_egv_text_height_size" android:layout_marginTop="-5.0dip" android:text="@string/mag_glass_glucose_default" android:maxLines="2" android:fontFamily="sans-serif" style="DexText" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/dex_black" android:gravity="center" android:layout_gravity="center" android:id="@id/textViewEGVUnits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/mgdl_unit_of_measurement" android:fontFamily="sans-serif-light" style="DexText" />
+</FrameLayout>

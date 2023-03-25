@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/stubEnabledBatteryOptimizationLayout" android:layout="@layout/setup_wizard_battery_optimization_enabled" android:inflatedId="@id/stubEnabledBatteryOptimizationLayoutInflated" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/stubDisabledBatteryOptimizationLayout" android:layout="@layout/setup_wizard_battery_optimization_disabled" android:inflatedId="@id/stubDisabledBatteryOptimizationLayoutInflated" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

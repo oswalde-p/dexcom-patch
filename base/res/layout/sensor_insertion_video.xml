@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ImageView android:layout_gravity="center" android:id="@id/id_insert_sensor_video_view" android:layout_width="wrap_content" android:layout_height="225.0dip" android:src="@drawable/insert_sensor_video_thumbnail" android:onClick="onClickStartVideo" android:contentDescription="@string/setup_wizard_play_video" android:layout_marginStart="@dimen/activity_vertical_margin" android:layout_marginEnd="@dimen/activity_vertical_margin" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/id_next_buttons" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/id_sensor_entry_description" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_sensor_entry_video_text1_gemini" style="?dexH2" />
+                <TextView android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_insert_sensor" style="?dexH2" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_then_attach" style="?dexH2" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/id_next_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/dex_black" android:gravity="center" android:id="@id/id_watch_overview_video_first_text" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_watch_video_to_continue" style="?dexH2" />
+            <com.dexcom.cgm.activities.controls.DualButton android:id="@id/nextButtonLayoutGray" android:layout_width="fill_parent" android:layout_height="wrap_content" app:onClickNegative="" app:onClickPositive="onClickCompleteSetup" app:positiveAppiumID="id_sensor_transmitter_skip_video_gray" app:textPositive="@string/setup_wizard_next" />
+            <com.dexcom.cgm.activities.controls.DualButton android:id="@id/nextButtonLayoutBlue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:onClickNegative="" app:onClickPositive="onClickNegative" app:positiveAppiumID="id_sensor_transmitter_skip_video_blue" app:textPositive="@string/setup_wizard_next" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

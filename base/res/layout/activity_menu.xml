@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ScrollView android:id="@id/menu_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/menu_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickShare" app:endTextAppiumID="id_home_share_value" app:listStartIcon="@drawable/ic_share" app:listTitle="@string/menu_share" app:titleAppiumID="id_home_share" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <TextView android:textColor="@color/dex_dark_blue" android:id="@id/id_settings_cgm" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dex_settings_CGM" android:paddingStart="16.0dip" android:paddingEnd="0.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/dex_alerts_text" app:titleAppiumID="id_title_0.0" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.1" app:listEndText="@string/share_mgdl" app:listTitle="@string/dex_settings_graph_height" app:titleAppiumID="id_title_0.1" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.2" app:listEndText="4/29/16 23:09" app:listTitle="@string/help_menu_text_3" app:titleAppiumID="id_title_0.2" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.8" app:listEndText="4/29/16, 23:09 AM" app:listTitle="@string/dex_menu_sensor_expires" app:titleAppiumID="id_title_0.8" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.3" app:listEndText="5/6/16 14:13" app:listTitle="@string/help_menu_text_4" app:titleAppiumID="id_title_0.3" />
+            <View android:id="@id/last_calibration_section_divider" android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.4" app:listEndText="ON" app:listTitle="@string/dex_settings_persistent_notifications_title" app:titleAppiumID="id_title_0.4" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:key="settings_transmitter" app:endTextAppiumID="id_value_0.5" app:listEndText="5002AK" app:listTitle="@string/dex_common_transmitter" app:titleAppiumID="id_title_0.5" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.6" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.6" app:listEndText="No Apps Connected" app:listTitle="@string/health_connect_title" app:titleAppiumID="id_title_0.6" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listStartIcon="@drawable/ic_calibrate_no_badge" app:listTitle="@string/dex_meter_entry_title" app:titleAppiumID="id_title_0.7" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <TextView android:textColor="@color/dex_dark_blue" android:id="@id/id_settings_support" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dex_settings_support" android:paddingStart="16.0dip" android:paddingEnd="0.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/help_menu_text_44" app:titleAppiumID="id_title_3.0" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/dex_settings_account" app:titleAppiumID="id_title_3.1" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/dex_settings_contact" app:titleAppiumID="id_title_3.2" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/dex_general_help" app:titleAppiumID="id_title_3.3" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listTitle="@string/dex_general_app_authorization" app:titleAppiumID="id_title_3.4" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_3.5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_3.5" app:listEndIcon="@drawable/ic_badge_number" app:listEndText="@string/accepted" app:listTitle="@string/data_consent" app:titleAppiumID="id_title_3.5" />
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_4.0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_settings_refer_text" app:listEndText="@string/dex_settings_stop_sensor_text" app:listTitle="@string/main_screen_text_29" app:titleAppiumID="id_title_4.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

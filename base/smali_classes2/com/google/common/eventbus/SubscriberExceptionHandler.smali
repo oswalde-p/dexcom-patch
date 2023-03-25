@@ -1,0 +1,15 @@
+.class public interface abstract Lcom/google/common/eventbus/SubscriberExceptionHandler;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Lcom/google/common/eventbus/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
+# virtual methods
+.method public abstract handleException(Ljava/lang/Throwable;Lcom/google/common/eventbus/SubscriberExceptionContext;)V
+.end method
+
+.method public varargs abstract ᫚ࡪࡨ(I[Ljava/lang/Object;)Ljava/lang/Object;
+.end method

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/volume_control_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/device_sound_settings" android:contentDescription="@string/setup_wizard_volume" />
+            <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="32.0dip" style="?dexH2" />
+            <TextView android:textStyle="bold" android:id="@id/id_device_sound_settings_when_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_text_1" style="?dexH2" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_text_2" style="?dexH2" />
+            <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_1" style="?dexH2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_2" style="?dexH2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_3" style="?dexH2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_4" style="?dexH2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_device_sound_settings_next" app:textPositive="@string/setup_wizard_next" />
+</LinearLayout>

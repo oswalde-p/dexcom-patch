@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <com.dexcom.cgm.activities.DexListSwitchView android:id="@id/persistent_notifications_switch" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/dex_settings_persistent_notifications_title" app:listTitle="@string/dex_settings_persistent_notifications_title" app:switchAppiumID="id_switch_0.0" app:titleAppiumID="id_title_0.0" />
+    <TextView android:id="@id/id_quick_glance_select_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/dex_settings_persistent_notifications_desc" style="?dexH2" />
+</LinearLayout>

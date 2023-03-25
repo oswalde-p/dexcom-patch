@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/dex_black" android:gravity="center" android:id="@id/error_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/side_margin_size" android:text="@string/dex_legal_no_server_access" android:layout_weight="1.0" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/startup_btn_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_text_retry" />
+    <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:layout_gravity="center_horizontal" android:id="@id/progressBar" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" style="?android:progressBarStyle" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

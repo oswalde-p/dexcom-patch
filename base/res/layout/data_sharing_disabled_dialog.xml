@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/DexTitle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/data_sharing_disabled" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="32.0dip" android:text="@string/data_sharing_disabled_explanation" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

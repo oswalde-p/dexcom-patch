@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:fillAfter="true" android:fillEnabled="true" android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:duration="@android:integer/config_longAnimTime" android:valueFrom="0.0" android:valueTo="1.0" />
+    <translate android:interpolator="@android:interpolator/accelerate_decelerate" android:duration="@android:integer/config_longAnimTime" android:fromYDelta="0.0%p" android:toYDelta="-14.999998%p" />
+    <scale android:duration="@android:integer/config_longAnimTime" android:pivotX="50.0%" android:pivotY="50.0%" android:fromXScale="1.0" android:toXScale="0.83" android:fromYScale="1.0" android:toYScale="0.9" />
+</set>

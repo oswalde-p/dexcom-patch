@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/accountParentLayout" android:background="?colorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="middle">
+        <RelativeLayout android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/account_imageView" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_margin="16.0dip" android:src="@drawable/dummy_image" android:contentDescription="@string/dex_general_blank" />
+        </RelativeLayout>
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.2" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/account_edit_name" app:titleAppiumID="id_title_0.2" style="?dexH2" />
+        <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.3" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/help_menu_text_58" app:titleAppiumID="id_title_0.3" style="?dexH2" />
+        <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_cell_0.4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.4" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/account_edit_username" app:titleAppiumID="id_title_0.4" style="?dexH2" />
+        <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:layout_gravity="center" android:id="@id/progressBar" android:visibility="invisible" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+    </LinearLayout>
+</LinearLayout>

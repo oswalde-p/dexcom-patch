@@ -1,0 +1,2 @@
+.class public synthetic Liz/ࡣ᫐࡭;
+.super Ljava/lang/Object;

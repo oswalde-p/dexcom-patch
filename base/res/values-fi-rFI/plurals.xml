@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">%d tunnin välein</item>
+        <item quantity="one">%d tunnin välein</item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">%d minuutin välein</item>
+        <item quantity="one">%d minuutin välein</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">%d tunti</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">%d minuuttia</item>
+        <item quantity="one">%d minuutteja</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

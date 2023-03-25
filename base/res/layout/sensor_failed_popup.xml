@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/side_margin_size" android:paddingTop="@dimen/side_margin_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_sensor_failed_due_to_restart_banner" android:background="@color/dex_red" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/id_sensor_failed_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_warning_white" android:layout_alignTop="@id/id_sensor_failed_banner_text" android:layout_alignBottom="@id/id_sensor_failed_banner_text" android:contentDescription="@string/notification_title_sensor_failed_gemini" android:layout_marginEnd="8.0dip" />
+        <TextView android:textStyle="bold" android:textColor="@color/dex_white" android:id="@id/id_sensor_failed_banner_text" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_title_sensor_failed_gemini" android:drawablePadding="5.0dip" android:layout_toEndOf="@id/id_sensor_failed_image" style="?dexH3" />
+    </RelativeLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+    <TextView android:textStyle="bold" android:id="@id/id_replace_sensor_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/side_margin_size" android:text="@string/sensor_failed_due_to_restart_dialog_title_text" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" style="?dexH1" />
+    <TextView android:layout_gravity="start" android:id="@id/id_sensor_expired_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sensor_failed_due_to_restart_dialog_text2" style="@style/H3" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/dex_dark_blue" android:layout_gravity="center_horizontal" android:id="@id/id_sensor_removal_instructions_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sensor_failed_due_to_restart_dialog_url_text" style="?dexH2" />
+</LinearLayout>

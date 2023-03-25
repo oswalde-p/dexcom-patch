@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="24.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_health_connect_logo" android:contentDescription="@string/app_name" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_connect_title" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+            <TextView android:id="@id/tv_hc_is_on" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_connect_label_on" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/dex_dark_gray" android:id="@id/tv_health_con_desc" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_connect_activity_message_before_connection" android:lineSpacingExtra="2.0dip" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/health_connect_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:textAllCaps="false" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:textNegative="" app:textPositive="@string/health_connect_setup_button" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/tv_stop_sharing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="@string/health_connect_stop_sharing_button" />
+    </LinearLayout>
+</LinearLayout>

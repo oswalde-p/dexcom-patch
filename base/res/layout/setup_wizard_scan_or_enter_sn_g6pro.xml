@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/scan_tx_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/scan_transmitter_barcode_dexcom_pro" android:contentDescription="@string/setup_wizard_barcode_title" />
+                <TextView android:id="@id/id_barcode_using_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_use_android_photo_barcode" style="?dexH2" />
+            </LinearLayout>
+        </ScrollView>
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:negativeAppiumID="id_transmitter_scan_barcode" app:onClickNegative="onClickScanCode" app:onClickPositive="onClickEnterManually" app:positiveAppiumID="id_transmitter_hand_enter_sn" app:textNegative="@string/setup_wizard_take_photo_repeat" app:textPositive="@string/sensor_code_take_photo_enter_manually" />
+    </RelativeLayout>
+</LinearLayout>

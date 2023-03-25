@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">Ogni %d ore</item>
+        <item quantity="one">Ogni %d ora</item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">Ogni %d minuti</item>
+        <item quantity="one">Ogni %d minuto</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">%d ore</item>
+        <item quantity="one">%d ora</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">%d minuti</item>
+        <item quantity="one">%d minuto</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d ore</item>
+        <item quantity="one">%d ora</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

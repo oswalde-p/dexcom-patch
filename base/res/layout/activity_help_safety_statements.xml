@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <com.dexcom.cgm.activities.DexListNavView android:gravity="top" android:id="@id/safety_statements_cgm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickCGMSafetyStatement" app:listEndArrow="true" app:listTitle="@string/help_menu_text_45" app:titleAppiumID="id_title_0.0" />
+    <com.dexcom.cgm.activities.DexListNavView android:id="@id/safety_statements_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickShareSafetyStatement" app:listEndArrow="true" app:listTitle="@string/help_menu_text_46" app:titleAppiumID="id_title_0.1" />
+</LinearLayout>

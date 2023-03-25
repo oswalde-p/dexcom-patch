@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/pick_sensor_site" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_pick_sensor_site" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?dexH1" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/insertion_slide_reel_image_adult_sites" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/setup_wizard_adult_sites" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/setup_wizard_all_ages" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/pick_sensor_site" />
+    <TextView android:id="@id/all_ages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setup_wizard_all_ages" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/insertion_slide_reel_image_adult_sites" />
+</androidx.constraintlayout.widget.ConstraintLayout>

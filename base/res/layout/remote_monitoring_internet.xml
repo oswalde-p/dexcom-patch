@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_above="@id/dualButtonLayout" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/share_follow_internet" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/sharer_to_follower_internet_connection" android:contentDescription="@string/share_screen_text_3" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/dex_white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/share_screen_text_68" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="55.0dip">
+                    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/share_device" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/share_screen_text_67" android:layout_alignParentStart="true" />
+                    <TextView android:textSize="15.0sp" android:gravity="center_horizontal" android:id="@id/follow_device" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/share_screen_text_69" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <TextView android:id="@id/id_internet_important_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/share_screen_text_8" style="?dexH2" />
+            <TextView android:id="@id/id_internet_to_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/share_screen_text_9" style="?dexH2" />
+        </LinearLayout>
+    </ScrollView>
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_internet_next" app:textPositive="@string/setup_wizard_next" />
+</RelativeLayout>

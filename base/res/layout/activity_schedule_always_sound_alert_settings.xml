@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/side_margin_size">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/id_schedule_name_enter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_always_sound_text" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+        <com.dexcom.cgm.activities.DexListSwitchView android:id="@id/id_cell_1.1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listEndArrow="false" app:listEndText="@string/alert_text_off" app:listTitle="@string/dex_alert_schedule_always_sound" app:switchAppiumID="id_switch_1.1" app:titleAppiumID="id_title_1.1" />
+        <Space android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="24.0dip" style="?dexH2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_1" style="?dexH2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_2" style="?dexH2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_3" style="?dexH2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_point" android:layout_marginEnd="16.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_alert_sounds_bullets_4" style="?dexH2" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_next" app:textNegative="" app:textPositive="@string/setup_wizard_next" />
+    </LinearLayout>
+</LinearLayout>

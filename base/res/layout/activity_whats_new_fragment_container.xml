@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/toolbar_whats_new" android:background="@color/dex_lighter_gray" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="5.0dip">
+        <ImageView android:textSize="16.0dip" android:id="@id/id_cancel" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_close_blue" android:contentDescription="@string/whats_new_close_tutorial_content_desc" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        <com.dexcom.cgm.activities.controls.AutoFitTextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/dex_dark_gray" android:gravity="center_vertical" android:id="@id/id_navigation_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/whats_new_title" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:id="@id/whats_new_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/circleArray" android:layout_below="@id/toolbar_whats_new">
+        <FrameLayout android:id="@id/whatsNewFragmentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.dexcom.cgm.activities.CircleArray android:id="@id/circleArray" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:layout_alignParentBottom="true" android:layout_marginStart="140.0dip" android:layout_marginEnd="150.0dip" app:currentCircle="1" app:numCircles="1" />
+</RelativeLayout>

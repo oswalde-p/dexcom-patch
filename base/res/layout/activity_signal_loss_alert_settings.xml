@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <com.dexcom.cgm.activities.DexListSwitchView android:id="@id/id_signal_loss_alert_cell" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/signal_loss_alert_text" app:listTitle="@string/signal_loss_alert_text" app:switchAppiumID="id_signal_loss_alert_switch" app:titleAppiumID="id_signal_loss_alert_title" />
+    <Space android:layout_width="fill_parent" android:layout_height="32.0dip" />
+    <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_for_more_then_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNotifyForMoreThan" app:endTextAppiumID="id_for_more_then_value" app:listEndArrow="true" app:listEndText="30 minutes" app:listTitle="@string/dex_alerts_for_more_than" app:titleAppiumID="id_for_more_then_title" />
+    <com.dexcom.cgm.activities.DexListNavView android:id="@id/id_sound_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:onClick="onClickSound" app:endTextAppiumID="id_sound_value" app:listEndArrow="true" app:listEndText="Signal Loss Alert" app:listTitle="@string/sound_alert_text" app:titleAppiumID="id_sound_title" />
+    <TextView android:textSize="@dimen/helpAndFootertextFontSize" android:id="@id/id_the_signal_loss_alert_text" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/dex_alerts_help_signal_loss_alert" android:layout_marginStart="@dimen/side_margin_size" android:layout_marginEnd="@dimen/side_margin_size" style="?dexH3" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip" android:baselineAligned="false">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/glucose_value_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/persistent_notification_egv_size_collapsed" android:textStyle="bold" android:textColor="@color/dex_black" android:gravity="center" android:id="@id/glucose_value" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+                <ImageView android:layout_gravity="center" android:id="@id/trend_arrow" android:layout_width="wrap_content" android:layout_height="24.0dip" android:scaleType="fitCenter" android:contentDescription="@string/notification_trend_desc" />
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:textColor="@color/dex_black" android:gravity="center_horizontal" android:id="@id/glucose_units" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mgdl_unit_of_measurement" android:layout_below="@id/glucose_value_layout" style="DexText" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

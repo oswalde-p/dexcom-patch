@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="center" android:id="@id/no_events" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dex_landscape_callout_no_events" />
+    <LinearLayout android:orientation="vertical" android:id="@id/landscape_events_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dexcom.retrospective.SwimLaneView android:id="@id/carb_lane" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:stretchDrawableOverTime="false" custom:title="@string/menu_events" custom:topLane="true" />
+        <com.dexcom.retrospective.SwimLaneView android:id="@id/exercise_lane" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:stretchDrawableOverTime="true" />
+        <com.dexcom.retrospective.SwimLaneView android:id="@id/health_lane" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:stretchDrawableOverTime="false" />
+    </LinearLayout>
+</FrameLayout>

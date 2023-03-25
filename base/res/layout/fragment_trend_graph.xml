@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/CGMTrendGraph" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dexcom.trendgraph.TrendGraphView android:layout_gravity="bottom|center" android:id="@id/id_trend_graph" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/main_screen_text_41" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/trend_graph_cover_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/trend_graph_cover_up_black_msg" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dex_first_session_calibration_message_2" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" style="?dexH2" />
+        <TextView android:textColor="@color/dex_red" android:id="@id/trend_graph_cover_up_red_msg" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:paddingStart="42.0dip" android:paddingEnd="24.0dip" style="?dexH2" />
+    </LinearLayout>
+</FrameLayout>

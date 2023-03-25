@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/sensor_code_scan" android:contentDescription="@string/sensor_code_title" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:id="@id/id_sensor_code_on_peel_off_liner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="20.0dip" android:text="@string/sensor_code_info_text_bold_only" android:layout_above="@id/dualButtonSensorCode" style="?dexH2" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dualButtonSensorCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayoutTakePhoto" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickScanCode" app:positiveAppiumID="id_scan_sensor_code" app:textPositive="@string/setup_wizard_take_photo_repeat_gemini" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+            <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayoutEnterManually" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickEnterManually" app:positiveAppiumID="id_manually_enter_sensor_code" app:textPositive="@string/sensor_code_take_photo_enter_manually" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

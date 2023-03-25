@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_event_fast_acting" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dex_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="5.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/dex_black" android:id="@id/event_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.5dip" android:text="@string/dose_amount" android:layout_marginStart="16.0dip" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/activity_vertical_margin" android:onClick="onClickEditTextLayout" android:layout_marginStart="@dimen/activity_vertical_margin">
+                        <com.dexcom.cgm.activities.controls.DexEditText android:textSize="16.0dip" android:textColor="@color/dex_black" android:textColorHint="@color/dex_light_gray" android:gravity="end" android:id="@id/event_amount" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/event_amount_hint" android:maxLength="5" android:digits="0123456789.," />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/dex_light_gray" android:id="@id/event_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit" android:onClick="onClickEditTextLayout" android:layout_marginStart="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/helpAndFootertextFontSize" android:textColor="@color/dex_gray" android:id="@id/event_amount_subtext" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/fast_acting_amount_prompt" android:layout_marginStart="@dimen/side_margin_size" android:layout_marginEnd="@dimen/side_margin_size" />
+            <androidx.cardview.widget.CardView android:id="@id/card_view_2" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:elevation="5.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/event_time_layout" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/dex_black" android:id="@id/id_health_event_time" android:background="@color/dex_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dose_time" android:layout_marginStart="16.0dip" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/dex_dark_blue" android:id="@id/id_health_time" android:background="@color/dex_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/dex_event_start_time_text" android:contentDescription="@string/dex_event_date_content_desc" android:layout_marginStart="@dimen/side_margin_size" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/helpAndFootertextFontSize" android:textColor="@color/dex_gray" android:id="@id/id_footer_1" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/long_acting_time_prompt" android:layout_marginStart="@dimen/side_margin_size" android:layout_marginEnd="@dimen/side_margin_size" />
+            <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:layout_gravity="center_horizontal" android:id="@id/quantity_event_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

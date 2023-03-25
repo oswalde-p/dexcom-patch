@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_transparent" android:padding="@dimen/side_margin_size" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/soundsList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/side_margin_size" android:divider="@drawable/list_divider" android:dividerHeight="1.0dip" style="?dexListItem" />
+</LinearLayout>

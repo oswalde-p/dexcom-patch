@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" card_view:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/id_trend_graph_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="com.dexcom.cgm.activities.TrendGraphFragment" android:layout_gravity="bottom" android:id="@id/trend_graph_fragment_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/id_data_consent_connected_image" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="34.0dip" android:src="@drawable/connected_to_cloud" android:layout_centerHorizontal="true" android:contentDescription="@string/data_consent" />
+    <TextView android:id="@id/id_data_consent_ask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/share_disabled_explanation" android:layout_below="@id/id_data_consent_connected_image" style="?dexH2" />
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/id_data_consent_remote_monitoring_dual_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_data_consent_next" app:textPositive="@string/setup_wizard_i_understand" />
+</RelativeLayout>

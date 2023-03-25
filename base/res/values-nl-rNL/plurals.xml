@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">Ieder %d uur</item>
+        <item quantity="one">Ieder %d uur</item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">Iedere %d minuten</item>
+        <item quantity="one">Iedere %d minuten</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">%d uur</item>
+        <item quantity="one">%d uur</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">%d minuten</item>
+        <item quantity="one">%d minuut</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d uren</item>
+        <item quantity="one">%d uur</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

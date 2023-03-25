@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">%d時間ごと</item>
+        <item quantity="one">Every %d hour</item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">%d分ごと</item>
+        <item quantity="one">Every %d minute</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">%d時間</item>
+        <item quantity="one">%d hour</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">%d分</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d時間</item>
+        <item quantity="one">%d hr</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d分</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

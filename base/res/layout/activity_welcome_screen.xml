@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/share_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/g5splash_green_logo" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <Space android:id="@id/id_logo_spacer" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/share_logo" />
+    <TextView android:id="@id/id_welcome_welcome_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_welcome" android:layout_below="@id/id_logo_spacer" style="?dexH2" />
+    <Space android:id="@id/id_text_spacer" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_below="@id/id_welcome_welcome_text" />
+    <TextView android:id="@id/id_welcome_internet_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_welcome_internet" android:layout_below="@id/id_text_spacer" style="?dexH2" />
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_welcome_lets_get_started" app:textNegative="" app:textPositive="@string/setup_wizard_get_started" />
+    <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:id="@id/progressBar" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyle" />
+</RelativeLayout>

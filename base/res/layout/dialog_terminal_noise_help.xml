@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:padding="@dimen/side_margin_size" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:id="@id/no_readings_sensor_not_working" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_readings_help_0" style="?dexH2" />
+        <TextView android:id="@id/no_readings_you_will_not_receive_alerts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_readings_help_1" style="?dexH2" />
+        <TextView android:id="@id/no_readings_use_blood_glucose_meter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_readings_help_2" style="?dexH2" />
+        <TextView android:textColor="@color/dex_dark_blue" android:gravity="center_horizontal" android:id="@id/no_readings_still_present_help_tip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/no_readings_contact_tech_support" style="?dexH2" />
+    </LinearLayout>
+</ScrollView>

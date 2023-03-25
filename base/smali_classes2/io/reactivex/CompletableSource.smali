@@ -1,0 +1,14 @@
+.class public interface abstract Lio/reactivex/CompletableSource;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract subscribe(Lio/reactivex/CompletableObserver;)V
+    .param p1    # Lio/reactivex/CompletableObserver;
+        .annotation build Lio/reactivex/annotations/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public varargs abstract ᫚ࡪࡨ(I[Ljava/lang/Object;)Ljava/lang/Object;
+.end method

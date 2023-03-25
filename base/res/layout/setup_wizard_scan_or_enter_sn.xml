@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/scan_tx_barcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/transmitter_2d_barcode_scan" android:contentDescription="@string/setup_wizard_take_photo_repeat_gemini" />
+            <TextView android:id="@id/id_barcode_using_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_wizard_use_android_photo_barcode_gemini" style="?dexH2" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+            <TextView android:id="@id/id_find_transmitter_sn_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transmitter_sn_find_locations" style="?dexH2" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip">
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayoutTakePhoto" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickScanCode" app:positiveAppiumID="id_transmitter_scan_barcode" app:textPositive="@string/setup_wizard_take_photo_repeat_gemini" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayoutEnterManually" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickEnterManually" app:positiveAppiumID="id_transmitter_hand_enter_sn" app:textPositive="@string/sensor_code_take_photo_enter_manually" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_horizontal_margin" />
+    </LinearLayout>
+</LinearLayout>

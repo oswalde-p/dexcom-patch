@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/remove_applicator_from_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wizard_remove_applicator_from_skin" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?dexH1" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/insertion_slide_reel_image_remove_applicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/setup_wizard_remove_applicator_from_skin" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/setup_wizard_remove_applicator_from_skin" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/remove_applicator_from_skin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

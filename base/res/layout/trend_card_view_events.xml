@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/menu_events" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/events_image_view" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_event_history" android:contentDescription="@string/menu_events" android:layout_marginStart="4.0dip" android:layout_marginEnd="16.0dip" />
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/dex_event_header_text_color" android:id="@id/events_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_events" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/events_arrow_image_view" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/thin_arrow_right" android:contentDescription="@string/menu_events" android:layout_marginStart="4.0dip" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

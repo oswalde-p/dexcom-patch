@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splash_background" android:background="@drawable/dexcom_wave" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:contentDescription="@string/splash_screen_welcome" />
+    <ImageView android:id="@id/dexcom_logo" android:background="@drawable/dexcom_logo" android:layout_width="264.0dip" android:layout_height="38.0dip" android:layout_marginTop="128.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/dexcom_logo" />
+    <TextView android:textSize="30.0dip" android:id="@id/welcome_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/splash_screen_welcome" android:layout_below="@id/dexcom_logo" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-light" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/id_ous_markings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_above="@id/splash_version" android:layout_centerInParent="true">
+        <ImageView android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ous_ce_mark" android:contentDescription="@string/ous_ce_mark_description" />
+        <androidx.legacy.widget.Space android:layout_gravity="center_horizontal" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <ImageView android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ous_blueman" android:contentDescription="@string/ous_blueman_description" />
+    </LinearLayout>
+    <TextView android:textColor="#ff000000" android:id="@id/splash_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/version_placeholder" android:layout_above="@id/splash_copyright" android:layout_centerInParent="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/splash_copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/help_menu_copyright_date" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dex_toolbar" />
+    <WebView android:id="@id/legal_webview" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/loading_spinner" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:layout_gravity="center" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+    </LinearLayout>
+</LinearLayout>

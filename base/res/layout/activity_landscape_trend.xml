@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="com.dexcom.cgm.activities.TrendGraphFragment" android:id="@id/trend_graph_fragment_landscape" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        <fragment android:name="com.dexcom.cgm.activities.LandscapeEventsFragment" android:id="@id/landscape_events_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <fragment android:name="com.dexcom.cgm.activities.LandscapeInsulinFragment" android:id="@id/insulin_fragment_landscape" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <View android:background="@color/gray_section_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dexcom.trendgraph.TimeScaleView android:id="@id/time_scale_view" android:layout_width="fill_parent" android:layout_height="19.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/callout_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/landscape_callout_layout" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/callout_line_layout" android:background="@color/dex_transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/callout_view" android:layout_centerInParent="true" android:translationY="-3.0dip">
+            <View android:id="@id/callout_line" android:background="@color/dex_callout_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/callout_arrow_layout" android:background="@color/dex_transparent" android:layout_width="20.0dip" android:layout_height="12.0dip" android:layout_below="@id/callout_line" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/callout_bottom_arrow" android:tint="@color/dex_white" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:translationY="-11.799988dip" android:scaleX="4.0" android:scaleY="4.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/callout_bottom_arrow" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:translationY="-1.0dip" android:scaleX="2.0" android:scaleY="2.0" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

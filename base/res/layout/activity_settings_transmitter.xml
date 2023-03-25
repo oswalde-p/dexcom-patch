@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:splitMotionEvents="false" android:showDividers="middle">
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_pair_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minHeight="72.0dip" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/dex_settings_pair_new" app:titleAppiumID="id_title_0.0" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_sn" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.1" app:listEndText="400000" app:listTitle="@string/dex_settings_sn" app:titleAppiumID="id_title_0.1" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_ab" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.2" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/dex_settings_ab" app:titleAppiumID="id_title_0.2" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_activated_on" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.3" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/dex_settings_activated_on" app:titleAppiumID="id_title_0.3" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_firmware" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.4" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/dex_settings_firmware" app:titleAppiumID="id_title_0.4" />
+            <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_transmitter_software_number" android:layout_width="fill_parent" android:layout_height="wrap_content" app:endTextAppiumID="id_value_0.5" app:listEndText="@string/dex_common_triple_dashes" app:listTitle="@string/dex_settings_software_number" app:titleAppiumID="id_title_0.5" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

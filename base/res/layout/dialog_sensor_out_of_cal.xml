@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/side_margin_size" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_screen_error_calibration_not_accepted" style="?dexH2" />
+    <TextView android:id="@id/bg_recalibration_text" android:paddingTop="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_screen_error_new_bg_needed_help_text" style="?dexH2" />
+    <Space android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_calibrate_badge_1" android:contentDescription="@string/dex_general_blank" />
+    <Space android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/dex_dark_blue" android:layout_gravity="center_horizontal" android:id="@id/bg_meter_value_help_tip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/main_screen_error_bg_meter_value_tips" style="?dexH2" />
+</LinearLayout>

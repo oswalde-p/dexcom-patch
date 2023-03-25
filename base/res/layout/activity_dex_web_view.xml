@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dex_toolbar" />
+    <RelativeLayout android:id="@id/title_bar_onDuo" android:background="@color/dex_lighter_gray" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="5.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="@color/dex_dark_gray" android:id="@id/id_on_duo_auth_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/dex_dark_blue" android:gravity="center" android:id="@id/id_close" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/button_text_close" android:onClick="onClickOK" android:textAllCaps="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/webview" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:layout_below="@id/toolbar" android:contentDescription="@string/help_menu_text_39" />
+    <com.dexcom.cgm.activities.ProgressBarCircularIndeterminate android:id="@id/webview_progressBar" android:visibility="invisible" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

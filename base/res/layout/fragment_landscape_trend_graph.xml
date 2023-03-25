@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/landscape_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/time_scale_buttons_container" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/id_retrospective_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_screen_rotation_24px" android:onClick="onTrendBackClick" android:contentDescription="@string/button_text_cancel" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dexcom.cgm.activities.controls.LandscapeTimeButton android:id="@id/id_retrospective_0" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/dex_landscape_trend_1_hour" style="@style/LandscapeTimeButton" />
+            <View android:id="@id/one_hour_button_bottom_view" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dexcom.cgm.activities.controls.LandscapeTimeButton android:id="@id/id_retrospective_1" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/dex_landscape_trend_3_hours" style="@style/LandscapeTimeButton" />
+            <View android:id="@id/three_hours_button_bottom_view" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dexcom.cgm.activities.controls.LandscapeTimeButton android:id="@id/id_retrospective_2" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/dex_landscape_trend_6_hours" style="@style/LandscapeTimeButton" />
+            <View android:id="@id/six_hours_button_bottom_view" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dexcom.cgm.activities.controls.LandscapeTimeButton android:id="@id/id_retrospective_3" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/dex_landscape_trend_12_hours" style="@style/LandscapeTimeButton" />
+            <View android:id="@id/twelve_hours_button_bottom_view" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dexcom.cgm.activities.controls.LandscapeTimeButton android:id="@id/id_retrospective_4" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/dex_landscape_trend_24_hours" style="@style/LandscapeTimeButton" />
+            <View android:id="@id/twenty_four_hours_button_bottom_view" android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/id_clarity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clarityicon" android:contentDescription="@string/clarity_app_name" android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/CGMTrendGraph" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.dexcom.trendgraph.TrendGraphView android:id="@id/id_trend_graph" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" android:contentDescription="@string/main_screen_text_41" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/trend_graph_cover_up" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/trend_graph_cover_up_black_msg" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dex_first_session_calibration_message_2" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" style="?dexH2" />
+            <TextView android:textColor="@color/dex_red" android:id="@id/trend_graph_cover_up_red_msg" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:paddingStart="42.0dip" android:paddingEnd="24.0dip" style="?dexH2" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

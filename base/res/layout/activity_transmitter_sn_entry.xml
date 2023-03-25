@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/id_bar_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_manual_entry_barcode" android:contentDescription="@string/dex_settings_enter_transmitter_sn_dexcom_pro" />
+            <com.dexcom.cgm.activities.controls.AutoFitTextView android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/transmitter_sn_entry_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0sp" android:text="@string/dex_settings_enter_transmitter_sn_hint" android:singleLine="true" android:layout_below="@id/id_bar_code" android:labelFor="@id/transmitter_sn_entry_text" style="@style/DexEditText" />
+            <com.dexcom.cgm.activities.controls.DexEditText android:layout_gravity="center" android:id="@id/id_enter_transmitter_sn_enter" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0sp" android:maxLength="6" android:layout_below="@id/id_bar_code" android:inputType="textVisiblePassword|textCapCharacters" style="@style/DexEditText" />
+        </RelativeLayout>
+        <TextView android:id="@id/id_enter_transmitter_sn_the_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="@string/dex_settings_transmitter_sn_print_locations" style="@style/H3" />
+    </LinearLayout>
+</LinearLayout>

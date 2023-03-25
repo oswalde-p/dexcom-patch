@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">Hver %d timer</item>
+        <item quantity="one">Hver %d time</item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">Hvert %d minutter</item>
+        <item quantity="one">Hvert %d minutt</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">%d timer</item>
+        <item quantity="one">%d time</item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">%d minutter</item>
+        <item quantity="one">%d minutt</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%d timer</item>
+        <item quantity="one">%d time</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

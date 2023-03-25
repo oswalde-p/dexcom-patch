@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/toolbar" layout="@layout/fragment_whats_new_welcome_gemini" />
+    <com.dexcom.cgm.activities.controls.DualButton android:id="@id/dualButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" android:layout_alignParentBottom="true" app:onClickNegative="onClickNegative" app:onClickPositive="onClickPositive" app:positiveAppiumID="id_whats_new_in_g7_next" app:textNegative="" app:textPositive="@string/setup_wizard_next" />
+</RelativeLayout>

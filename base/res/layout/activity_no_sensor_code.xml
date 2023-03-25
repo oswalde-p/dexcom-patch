@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/id_no_sensor_code_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:layout_below="@id/toolbar">
+        <ImageView android:layout_gravity="center" android:id="@id/id_no_sensor_code_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/no_sensor_code" android:contentDescription="@string/no_sensor_code" />
+        <TextView android:id="@id/id_no_sensor_code_text_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_sensor_code_text_1" style="?dexH2" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+        <TextView android:id="@id/id_no_sensor_code_text_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_sensor_code_text_2" style="?dexH2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/id_next_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" android:layout_alignParentBottom="true">
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/id_enter_sensor_code_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickEnterSensorCode" app:positiveAppiumID="id_enter_sensor_code_button" app:textPositive="@string/enter_sensor_code_scan_button_text" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_vertical_margin" />
+        <com.dexcom.cgm.activities.controls.DualButton android:id="@id/id_no_sensor_code_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hideNegative="true" app:onClickPositive="onClickNoSensorCode" app:positiveAppiumID="id_no_sensor_code_button" app:textPositive="@string/no_sensor_code_button_text" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/activity_horizontal_margin" />
+    </LinearLayout>
+</RelativeLayout>

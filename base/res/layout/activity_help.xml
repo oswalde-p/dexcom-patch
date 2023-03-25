@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/help_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:splitMotionEvents="false" android:showDividers="middle">
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_faq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/help_menu_text_42" app:titleAppiumID="id_title_0.0" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_safety_statements" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/help_menu_text_39" app:titleAppiumID="id_title_0.1" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_setup_wizard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/help_menu_text_38" app:titleAppiumID="id_title_0.2" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_user_guide" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/user_guide_text" app:titleAppiumID="id_title_0.3" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_product_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/product_instructions_text" app:titleAppiumID="id_title_0.4" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/help_how_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/help_menu_text_41" app:titleAppiumID="id_title_0.5" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/whats_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickNavigate" app:listEndArrow="true" app:listTitle="@string/whats_new_title" app:titleAppiumID="id_title_0.6" />
+    </LinearLayout>
+</LinearLayout>

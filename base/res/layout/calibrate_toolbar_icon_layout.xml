@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/calibrate_image" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/ic_calibrate_no_badge" android:contentDescription="@string/dex_meter_entry_title" />
+    <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/dex_dark_blue" android:id="@id/calibrate_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dex_meter_entry_title" android:textAllCaps="true" />
+</LinearLayout>

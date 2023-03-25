@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/dex_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:splitMotionEvents="false" android:showDividers="middle">
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_graph_height_300_mgdl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickSetGraphHeight" app:listEndArrow="false" app:listTitle="@string/share_mgdl" app:titleAppiumID="id_graph_height_300" />
+        <com.dexcom.cgm.activities.DexListNavView android:id="@id/settings_graph_height_400_mgdl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClickSetGraphHeight" app:listEndArrow="false" app:listTitle="@string/share_mgdl" app:titleAppiumID="id_graph_height_400" />
+    </LinearLayout>
+</LinearLayout>

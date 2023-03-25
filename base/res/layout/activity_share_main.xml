@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dex_toolbar" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/share_pull_to_refresh" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.dexcom.cgm.activities.share.PullToRefreshFrameLayout android:id="@id/share_pull_to_refresh_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <FrameLayout android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:elevation="2.0dip">
+                    <FrameLayout android:id="@id/id_cell_0.0" android:background="@drawable/ripple_rectangle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/side_margin_size" android:paddingEnd="@dimen/side_margin_size">
+                        <TextView android:layout_gravity="start|center" android:id="@id/id_title_0.0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_screen_text_10" style="?dexH2" />
+                        <Switch android:layout_gravity="end|center" android:id="@id/id_switch_0.0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="75.0dip" android:paddingStart="@dimen/side_margin_size" android:paddingEnd="@dimen/side_margin_size">
+                    <TextView android:textSize="@dimen/helpAndFootertextFontSize" android:layout_gravity="start|center|top" android:id="@id/id_dexcom_share_to_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/dex_share_stop_sharing" style="?dexH3" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_cell_1.0" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:paddingStart="@dimen/side_margin_size" android:paddingEnd="@dimen/side_margin_size" android:elevation="2.0dip">
+                    <TextView android:gravity="start" android:id="@id/id_title_1.0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dex_share_sharing_status" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" style="?dexH2" />
+                    <TextView android:gravity="end" android:id="@id/id_value_1.0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/alert_text_off" android:layout_weight="1.0" android:contentDescription="@string/dex_share_sharing_status" android:layout_marginStart="8.0dip" style="?dexH2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="140.0dip" android:paddingStart="@dimen/side_margin_size" android:paddingEnd="@dimen/side_margin_size">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/id_dexcom_share_internet" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/share_status_1_all_good" android:layout_weight="1.0" android:contentDescription="@string/dex_share_sharing_status" />
+                    <TextView android:textColor="@color/dex_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-58.0dip" android:layout_marginBottom="37.0dip" android:text="@string/share_screen_text_68" />
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/dex_dark_blue" android:layout_gravity="center_horizontal" android:id="@id/id_dexcom_share_help" android:background="@drawable/ripple_rectangle" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dex_general_help" android:textAllCaps="false" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/id_cell_2.0" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/side_margin_size" android:elevation="2.0dip">
+                    <TextView android:textColor="@color/dex_dark_blue" android:layout_gravity="start" android:id="@id/id_title_2.0" android:background="@drawable/ripple_rectangle" android:padding="@dimen/side_margin_size" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_screen_text_5" android:onClick="onClickAddFollowerButton" style="?dexH2" />
+                </FrameLayout>
+                <FrameLayout android:background="@color/dex_transparent" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingStart="@dimen/side_margin_size" android:paddingEnd="@dimen/side_margin_size">
+                    <TextView android:layout_gravity="start|center" android:id="@id/id_dexcom_share_followers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_screen_text_18" android:textAllCaps="true" style="?dexH3" />
+                </FrameLayout>
+                <ListView android:id="@id/followers_list" android:background="@color/dex_white" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip" />
+            </LinearLayout>
+        </com.dexcom.cgm.activities.share.PullToRefreshFrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

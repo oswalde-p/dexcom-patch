@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dex_alerts_repeat_hours_value">
+        <item quantity="other">‏כל %d שעות</item>
+        <item quantity="one">‏כל שעה %d</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+    <plurals name="dex_alerts_repeat_minutes_value">
+        <item quantity="other">‏כל %d דקות</item>
+        <item quantity="one">‏כל דקה %d</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_hours_value">
+        <item quantity="other">‏%d שעות</item>
+        <item quantity="one">‏שעה %d</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+    <plurals name="dex_alerts_signal_loss_minutes_value">
+        <item quantity="other">‏%d דקות</item>
+        <item quantity="one">‏דקה %d</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">‏%d שעות</item>
+        <item quantity="one">‏שעה %d</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">‏%d דקות</item>
+        <item quantity="one">‏%d דקות</item>
+        <item quantity="two"></item>
+        <item quantity="many"></item>
+    </plurals>
+</resources>

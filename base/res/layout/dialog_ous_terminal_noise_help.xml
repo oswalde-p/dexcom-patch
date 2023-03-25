@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:padding="@dimen/side_margin_size" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:id="@id/no_readings_sensor_not_working" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_readings_help_0" style="?dexH2" />
+        <TextView android:id="@id/no_readings_you_will_not_receive_alerts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_readings_help_1" style="?dexH2" />
+        <TextView android:id="@id/no_readings_continuous_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_readings_continues_for_3_hours" style="?dexH2" />
+    </LinearLayout>
+</ScrollView>

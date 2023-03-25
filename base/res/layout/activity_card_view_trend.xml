@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:id="@id/toolbar_trend" android:background="@color/dex_white" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/DexToolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_trend">
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.1" layout="@layout/trend_card_view_cgm_state" />
+        <include android:id="@id/trend_graph_card" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/trend_card_view_trend_graph" />
+        <include android:id="@id/events_card" android:layout_width="fill_parent" android:layout_height="47.0dip" layout="@layout/trend_card_view_events" />
+    </LinearLayout>
+    <include android:id="@id/first_calibration_tooltip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="56.0dip" layout="@layout/calibration_tooltip" />
+    <include android:id="@id/alert_sound_icon_tooltip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="56.0dip" layout="@layout/alert_sound_icon_tooltip" />
+</RelativeLayout>
