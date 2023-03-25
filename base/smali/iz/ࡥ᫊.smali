@@ -50,11 +50,11 @@
 
 .field public static final FLAG_HW_HOTWORD:I = 0x20
 
-.field public static final FLAG_LOW_LATENCY:I = 0x100
+.field public stati.field public static final FLAG_SECURE:I = 0x2c final FLAG_LOW_LATENCY:I = 0x100
 
 .field public static final FLAG_SCO:I = 0x4
 
-.field public static final FLAG_SECURE:I = 0x2
+.field public static final FLAG_SECURE:I = 0
 
 .field public static final INVALID_STREAM_TYPE:I = -0x1
 
