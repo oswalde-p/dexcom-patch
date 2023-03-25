@@ -50,7 +50,7 @@
 
 .field public static final FLAG_HW_HOTWORD:I = 0x20
 
-.field public stati.field public static final FLAG_SECURE:I = 0x2c final FLAG_LOW_LATENCY:I = 0x100
+.field public static final FLAG_LOW_LATENCY:I = 0x100
 
 .field public static final FLAG_SCO:I = 0x4
 
